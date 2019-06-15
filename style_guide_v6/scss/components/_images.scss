@@ -1,0 +1,7 @@
+
+ img {
+  @include mobile {
+    display: block;
+    margin: auto;
+  }
+}
