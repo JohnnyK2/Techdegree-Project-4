@@ -480,9 +480,24 @@ template {
   }
 }
 
+.nav li {
+  font-weight: bold;
+  border-radius: 10px;
+  list-style: none;
+}
+@media (max-width: 480px) {
+  .nav li {
+    text-align: center;
+    width: 80%;
+    background-color: #00ffcc;
+    padding: 1em;
+    margin: 0.5em 0;
+  }
+}
+
 .nav li,
 h1 {
-  font-family: Arial;
+  font-family: arial;
 }
 
 /*# sourceMappingURL=styles.css.map */

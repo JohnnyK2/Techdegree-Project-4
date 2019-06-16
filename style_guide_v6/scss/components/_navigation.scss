@@ -1,0 +1,15 @@
+
+
+
+.nav li {
+  font-weight: bold;
+  border-radius: 10px;
+  list-style: none;
+    @include mobile {
+      text-align: center;
+      width: 80%;
+      background-color: $aqua;
+      padding: 1em;
+      margin: .5em 0;
+  }
+}
