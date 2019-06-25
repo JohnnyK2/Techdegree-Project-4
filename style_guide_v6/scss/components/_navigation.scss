@@ -1,9 +1,10 @@
 
 
 
-.nav li {  
+.nav li {
   list-style: none;
   &:hover {
+    @include transition;
     background-color: $aqua;
     a {
       color: $white;

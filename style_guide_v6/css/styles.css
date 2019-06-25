@@ -474,16 +474,35 @@ template {
 }
 
 @media (max-width: 580px) {
+  .grid__col--6 {
+    margin-top: 2em;
+  }
+}
+
+@media (max-width: 580px) {
   img {
     display: block;
     margin: auto;
   }
 }
 
+.img--avatar {
+  margin-bottom: 2em;
+}
+
+.img--frame {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #8a8a5c;
+}
+
 .nav li {
   list-style: none;
 }
 .nav li:hover {
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in;
   background-color: #00ffcc;
 }
 .nav li:hover a {
@@ -545,6 +564,51 @@ p .link {
   padding-left: 5%;
   border-left: 10px solid #00ffcc;
   border-radius: 6px;
+}
+
+button {
+  width: 85%;
+  padding: 0.8em 0;
+  margin: 1em 7.5%;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: arial;
+  border-radius: 10px;
+  border: none;
+  background-color: #1a8cff;
+}
+
+input::placeholder {
+  padding-left: 5%;
+}
+
+legend {
+  margin-top: 1em;
+  font-family: arial;
+  margin-left: 10%;
+  width: 80%;
+  color: #8a8a5c;
+}
+
+input,
+label {
+  display: block;
+}
+
+label {
+  display: none;
+  margin-bottom: 0.5em;
+}
+
+input {
+  margin: 0 10% 0.5em;
+  width: 80%;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 6px solid #00ffcc;
 }
 
 /*# sourceMappingURL=styles.css.map */

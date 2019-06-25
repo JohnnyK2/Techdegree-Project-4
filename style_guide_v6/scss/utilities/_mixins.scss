@@ -4,3 +4,20 @@
     @content;
   }
 }
+
+@mixin button-mobile {
+  width: 85%;
+  padding: 0.8em 0;
+  margin: 1em 7.5%;
+  color: $white;
+  text-transform: uppercase;
+  font-family: $font-arial;
+  border-radius: 10px;
+  border: none;
+}
+
+@mixin transition {
+  transition-property: background-color;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in;
+}

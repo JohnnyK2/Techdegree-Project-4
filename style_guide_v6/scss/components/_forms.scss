@@ -1,0 +1,33 @@
+
+input::placeholder {
+  padding-left: 5%;
+}
+
+legend {
+  margin-top: 1em;
+  font-family: $font-arial;
+  margin-left: 10%;
+  width: 80%;
+  color: $grey;
+}
+
+input,
+label {
+  display: block;
+}
+
+label {
+  display: none;
+  margin-bottom: 0.5em;
+}
+
+input {
+  margin: 0 10% .5em;
+  width: 80%;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 6px solid $aqua;
+}
