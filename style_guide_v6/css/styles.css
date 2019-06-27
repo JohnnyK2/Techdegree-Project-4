@@ -479,6 +479,34 @@ template {
   }
 }
 
+.grid__col--3 {
+  background-color: #ffcce6;
+}
+
+.grid__col--4 {
+  background-color: #b3ffff;
+}
+
+.grid__col--5 {
+  background-color: #99ff99;
+}
+
+.grid__col--6 {
+  background-color: #4db8ff;
+}
+
+.grid__col--7 {
+  background-color: #ffcccc;
+}
+
+.grid__col--8 {
+  background-color: #ff8566;
+}
+
+.grid__col--12 {
+  background-color: #b3ffff;
+}
+
 @media (max-width: 580px) {
   img {
     display: block;
@@ -491,7 +519,7 @@ template {
 }
 
 .img--frame {
-  width: 80%;
+  width: 85%;
   padding: 10px;
   border: 1px solid #8a8a5c;
 }
@@ -501,8 +529,8 @@ template {
 }
 .nav li:hover {
   transition-property: background-color;
-  transition-duration: 500ms;
-  transition-timing-function: ease-in;
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
   background-color: #00ffcc;
 }
 .nav li:hover a {
@@ -575,7 +603,56 @@ button {
   font-family: arial;
   border-radius: 10px;
   border: none;
+}
+
+.btn--default {
   background-color: #1a8cff;
+}
+.btn--default:hover {
+  transition-property: background-color;
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+  background-color: #9accff;
+}
+
+.btn--success {
+  background-color: #008000;
+}
+.btn--success:hover {
+  transition-property: background-color;
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+  background-color: #01ff01;
+}
+
+.btn--error {
+  background-color: #ff1a1a;
+}
+.btn--error:hover {
+  transition-property: background-color;
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+  background-color: #ff9a9a;
+}
+
+.btn--warning {
+  background-color: #cc5200;
+}
+.btn--warning:hover {
+  transition-property: background-color;
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+  background-color: #ff944d;
+}
+
+.btn--info {
+  background-color: #660033;
+}
+.btn--info:hover {
+  transition-property: background-color;
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+  background-color: #e60073;
 }
 
 input::placeholder {

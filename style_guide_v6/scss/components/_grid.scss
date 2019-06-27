@@ -72,3 +72,9 @@
     margin-top: 2em;
   }
 }
+
+@each $col, $color in $grid {
+  .grid__#{$col} {
+    background-color: $color;
+  }
+}

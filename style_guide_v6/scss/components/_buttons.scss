@@ -1,5 +1,39 @@
 
 button {
   @include button-mobile;
-  background-color: $sky;
+}
+.btn--default {
+  background-color: $default;
+  &:hover {
+    @include transition;
+    background-color: $def-lt;
+  }
+}
+.btn--success {
+  background-color: $success;
+  &:hover {
+    @include transition;
+    background-color: $suc-lt;
+  }
+}
+.btn--error {
+  background-color: $error;
+  &:hover {
+    @include transition;
+    background-color: $err-lt;
+  }
+}
+.btn--warning {
+  background-color: $warning;
+  &:hover {
+    @include transition;
+    background-color: $warn-lt;
+  }
+}
+.btn--info {
+  background-color: $info;
+  &:hover {
+    @include transition;
+    background-color: $info-lt;
+  }
 }

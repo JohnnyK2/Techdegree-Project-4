@@ -9,4 +9,28 @@ $font-arial: arial;
 $aqua: #00ffcc;
 $white: #ffffff;
 $grey: #8a8a5c;
-$sky: #1a8cff;
+
+//var color buttons
+$default: #1a8cff;
+$success: #008000;
+$error: #ff1a1a;
+$warning: #cc5200;
+$info: #660033;
+
+//color functions
+$def-lt: lighten($default, 25%);
+$suc-lt: lighten($success, 25%);
+$err-lt: lighten($error, 25%);
+$warn-lt: lighten($warning, 25%);
+$info-lt: lighten($info, 25%);
+
+//grid map
+$grid: (
+  'col--3': #ffcce6,
+  'col--4': #b3ffff,
+  'col--5': #99ff99,
+  'col--6': #4db8ff,
+  'col--7': #ffcccc,
+  'col--8': #ff8566,
+  'col--12': #b3ffff,
+);
