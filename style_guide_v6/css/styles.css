@@ -347,6 +347,7 @@ template {
   }
 }
 .grid__col--1 {
+  padding: 0.5em 0;
   margin-top: 10px;
   flex-basis: 100%;
 }
@@ -357,6 +358,7 @@ template {
   }
 }
 .grid__col--2 {
+  padding: 0.5em 0;
   margin-top: 10px;
   flex-basis: 100%;
 }
@@ -367,6 +369,7 @@ template {
   }
 }
 .grid__col--3 {
+  padding: 0.5em 0;
   margin-top: 10px;
   flex-basis: 100%;
 }
@@ -377,6 +380,7 @@ template {
   }
 }
 .grid__col--4 {
+  padding: 0.5em 0;
   margin-top: 10px;
   flex-basis: 100%;
 }
@@ -387,6 +391,7 @@ template {
   }
 }
 .grid__col--5 {
+  padding: 0.5em 0;
   margin-top: 10px;
   flex-basis: 100%;
 }
@@ -397,6 +402,7 @@ template {
   }
 }
 .grid__col--6 {
+  padding: 0.5em 0;
   margin-top: 10px;
   flex-basis: 100%;
 }
@@ -407,6 +413,7 @@ template {
   }
 }
 .grid__col--7 {
+  padding: 0.5em 0;
   margin-top: 10px;
   flex-basis: 100%;
 }
@@ -417,6 +424,7 @@ template {
   }
 }
 .grid__col--8 {
+  padding: 0.5em 0;
   margin-top: 10px;
   flex-basis: 100%;
 }
@@ -427,6 +435,7 @@ template {
   }
 }
 .grid__col--9 {
+  padding: 0.5em 0;
   margin-top: 10px;
   flex-basis: 100%;
 }
@@ -437,6 +446,7 @@ template {
   }
 }
 .grid__col--10 {
+  padding: 0.5em 0;
   margin-top: 10px;
   flex-basis: 100%;
 }
@@ -447,6 +457,7 @@ template {
   }
 }
 .grid__col--11 {
+  padding: 0.5em 0;
   margin-top: 10px;
   flex-basis: 100%;
 }
@@ -457,6 +468,7 @@ template {
   }
 }
 .grid__col--12 {
+  padding: 0.5em 0;
   margin-top: 10px;
   flex-basis: 100%;
 }
@@ -473,44 +485,43 @@ template {
   }
 }
 
-@media (max-width: 580px) {
-  .grid__col--6 {
-    margin-top: 2em;
-  }
-}
-
-.grid__col--3 {
+.theme__colors ~ .grid__col--3 {
   background-color: #ffcce6;
 }
 
-.grid__col--4 {
+.theme__colors ~ .grid__col--4 {
   background-color: #b3ffff;
 }
 
-.grid__col--5 {
+.theme__colors ~ .grid__col--5 {
   background-color: #99ff99;
 }
 
-.grid__col--6 {
+.theme__colors ~ .grid__col--6 {
   background-color: #4db8ff;
 }
 
-.grid__col--7 {
+.theme__colors ~ .grid__col--7 {
   background-color: #ffcccc;
 }
 
-.grid__col--8 {
+.theme__colors ~ .grid__col--8 {
   background-color: #ff8566;
 }
 
-.grid__col--12 {
+.theme__colors ~ .grid__col--12 {
   background-color: #b3ffff;
 }
 
-@media (max-width: 580px) {
+@media (min-width: 480px) {
   img {
     display: block;
     margin: auto;
+  }
+}
+@media (min-width: 769px) {
+  img {
+    margin-left: 30%;
   }
 }
 
@@ -524,26 +535,41 @@ template {
   border: 1px solid #8a8a5c;
 }
 
-.nav li {
+@media (min-width: 769px) {
+  ul {
+    padding-left: 30%;
+  }
+}
+
+.nav li.nav__item {
   list-style: none;
 }
-.nav li:hover {
+.nav li.nav__item:hover {
   transition-property: background-color;
   transition-duration: 300ms;
   transition-timing-function: ease-out;
   background-color: #00ffcc;
 }
-.nav li:hover a {
+.nav li.nav__item:hover a {
   color: #ffffff;
   font-weight: bold;
 }
-@media (max-width: 580px) {
-  .nav li {
+@media (min-width: 480px) {
+  .nav li.nav__item {
     text-align: center;
     padding: 1em;
     width: 80%;
-    margin: 0.5em 0;
+    margin: auto;
     border-radius: 10px;
+  }
+}
+@media (min-width: 769px) {
+  .nav li.nav__item {
+    text-align: center;
+    display: inline-block;
+    width: 6.8em;
+    padding: 0.5em 0 0.5em 0;
+    margin: 0.5em 0 0.5em 0;
   }
 }
 
@@ -580,7 +606,7 @@ p {
   margin: auto;
 }
 p .link {
-  color: #1a8cff;
+  color: "default";
   text-decoration: none;
 }
 
@@ -608,51 +634,21 @@ button {
 .btn--default {
   background-color: #1a8cff;
 }
-.btn--default:hover {
-  transition-property: background-color;
-  transition-duration: 300ms;
-  transition-timing-function: ease-out;
-  background-color: #9accff;
-}
 
 .btn--success {
   background-color: #008000;
-}
-.btn--success:hover {
-  transition-property: background-color;
-  transition-duration: 300ms;
-  transition-timing-function: ease-out;
-  background-color: #01ff01;
 }
 
 .btn--error {
   background-color: #ff1a1a;
 }
-.btn--error:hover {
-  transition-property: background-color;
-  transition-duration: 300ms;
-  transition-timing-function: ease-out;
-  background-color: #ff9a9a;
-}
 
 .btn--warning {
   background-color: #cc5200;
 }
-.btn--warning:hover {
-  transition-property: background-color;
-  transition-duration: 300ms;
-  transition-timing-function: ease-out;
-  background-color: #ff944d;
-}
 
 .btn--info {
   background-color: #660033;
-}
-.btn--info:hover {
-  transition-property: background-color;
-  transition-duration: 300ms;
-  transition-timing-function: ease-out;
-  background-color: #e60073;
 }
 
 input::placeholder {

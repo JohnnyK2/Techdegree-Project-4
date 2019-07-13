@@ -1,7 +1,10 @@
+ul {
+  @include desktop {
+  padding-left: 30%;
+  }
+}
 
-
-
-.nav li {
+.nav li.nav__item {
   list-style: none;
   &:hover {
     @include transition;
@@ -15,9 +18,16 @@
       text-align: center;
       padding: 1em;
       width: 80%;
-      margin: .5em 0;
+      margin: auto;
       border-radius: 10px;
   }
+    @include desktop {
+      text-align: center;
+      display: inline-block;
+      width: 6.8em;
+      padding: .5em 0 .5em 0;
+      margin: .5em 0 .5em 0;
+    }
 }
 
 .nav a {

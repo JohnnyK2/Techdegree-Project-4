@@ -4,6 +4,10 @@
     display: block;
     margin: auto;
   }
+
+  @include desktop {
+    margin-left: 30%;
+  }
 }
 
 .img--avatar {

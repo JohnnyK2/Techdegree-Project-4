@@ -34,6 +34,8 @@
       &--#{$i} {
 
         // base styles applied to all grid columns
+        padding: 0.5em 0;
+
         // NOTE: could be converted to a placeholder, along with margin
         // from the  media query
         margin-top: 10px;
@@ -67,14 +69,8 @@
   }
 }
 
-.grid__col--6 {
-  @include mobile {
-    margin-top: 2em;
-  }
-}
-
 @each $col, $color in $grid {
-  .grid__#{$col} {
+  .theme__colors ~ .grid__#{$col} {
     background-color: $color;
   }
 }
