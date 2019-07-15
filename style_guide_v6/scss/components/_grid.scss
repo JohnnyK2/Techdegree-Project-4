@@ -69,8 +69,16 @@
   }
 }
 
+//loop through grid map and color grid__col
 @each $col, $color in $grid {
   .theme__colors.grid__#{$col} {
     background-color: $color;
+  }
+}
+
+//center grid__col--7 at 768px
+.centered {
+  @include desktop {
+    margin: auto;
   }
 }

@@ -9,23 +9,35 @@ $font-arial: arial;
 $aqua: #00ffcc;
 $white: #ffffff;
 $grey: #8a8a5c;
+$blue: #1a8cff;
+$lightblue: #008000;
+$red: #ff1a1a;
+$burnt-orange: #cc5200;
+$grape: #660033;
+$violet: #ffcce6;
+$sky-blue: #b3ffff;
+$lime: #99ff99;
+$dark-sky-blue: #4db8ff;
+$light-violet: #ffcccc;
+$light-tomato: #ff8566;
+$sea-green: #99ffcc;
 
 // color buttons
 $buttons: (
-'default': #1a8cff,
-'success': #008000,
-'error': #ff1a1a,
-'warning': #cc5200,
-'info': #660033,
+'default': $blue,
+'success': $lightblue,
+'error': $red,
+'warning': $burnt-orange,
+'info': $grape,
 );
 
 // grid color map
 $grid: (
-  'col--3': #ffcce6,
-  'col--4': #b3ffff,
-  'col--5': #99ff99,
-  'col--6': #4db8ff,
-  'col--7': #ffcccc,
-  'col--8': #ff8566,
-  'col--12': #b3ffff,
+  'col--3': $violet,
+  'col--4': $sky-blue,
+  'col--5': $lime,
+  'col--6': $dark-sky-blue,
+  'col--7': $light-violet,
+  'col--8': $light-tomato,
+  'col--12': $sea-green,
 );

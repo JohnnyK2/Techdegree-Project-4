@@ -17,9 +17,15 @@
 }
 
 @mixin desktop {
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     @content;
   }
+}
+
+@mixin button-desktop {
+  display: inline-block;
+  width: 15%;
+  margin: 1em;
 }
 
 @mixin transition {

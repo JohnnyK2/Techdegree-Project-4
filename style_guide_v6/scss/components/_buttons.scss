@@ -1,6 +1,19 @@
 
 button {
-  @include button-mobile;
+  @include mobile {
+    @include button-mobile
+  }
+}
+
+div.grid__col--12 {
+  display: flex;
+  justify-content: center;
+}
+
+.grid__col--12 .theme__colors {
+  @include desktop {
+    @include button-desktop
+  }
 }
 
 @each $button, $color in $buttons {

@@ -1,6 +1,7 @@
-ul {
+ul.nav {
   @include desktop {
-  padding-left: 30%;
+  display: flex;
+  justify-content: flex-end;
   }
 }
 

@@ -510,7 +510,13 @@ template {
 }
 
 .theme__colors.grid__col--12 {
-  background-color: #b3ffff;
+  background-color: #99ffcc;
+}
+
+@media (min-width: 768px) {
+  .centered {
+    margin: auto;
+  }
 }
 
 @media (min-width: 480px) {
@@ -519,7 +525,7 @@ template {
     margin: auto;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   img {
     margin-left: 30%;
   }
@@ -535,9 +541,10 @@ template {
   border: 1px solid #8a8a5c;
 }
 
-@media (min-width: 769px) {
-  ul {
-    padding-left: 30%;
+@media (min-width: 768px) {
+  ul.nav {
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
@@ -563,7 +570,7 @@ template {
     border-radius: 10px;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .nav li.nav__item {
     text-align: center;
     display: inline-block;
@@ -620,15 +627,30 @@ p .link {
   border-radius: 6px;
 }
 
-button {
-  width: 85%;
-  padding: 0.8em 0;
-  margin: 1em 7.5%;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-family: arial;
-  border-radius: 10px;
-  border: none;
+@media (min-width: 480px) {
+  button {
+    width: 85%;
+    padding: 0.8em 0;
+    margin: 1em 7.5%;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: arial;
+    border-radius: 10px;
+    border: none;
+  }
+}
+
+div.grid__col--12 {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .grid__col--12 .theme__colors {
+    display: inline-block;
+    width: 15%;
+    margin: 1em;
+  }
 }
 
 .btn--default {
