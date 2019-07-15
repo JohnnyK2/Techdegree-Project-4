@@ -485,31 +485,31 @@ template {
   }
 }
 
-.theme__colors ~ .grid__col--3 {
+.theme__colors.grid__col--3 {
   background-color: #ffcce6;
 }
 
-.theme__colors ~ .grid__col--4 {
+.theme__colors.grid__col--4 {
   background-color: #b3ffff;
 }
 
-.theme__colors ~ .grid__col--5 {
+.theme__colors.grid__col--5 {
   background-color: #99ff99;
 }
 
-.theme__colors ~ .grid__col--6 {
+.theme__colors.grid__col--6 {
   background-color: #4db8ff;
 }
 
-.theme__colors ~ .grid__col--7 {
+.theme__colors.grid__col--7 {
   background-color: #ffcccc;
 }
 
-.theme__colors ~ .grid__col--8 {
+.theme__colors.grid__col--8 {
   background-color: #ff8566;
 }
 
-.theme__colors ~ .grid__col--12 {
+.theme__colors.grid__col--12 {
   background-color: #b3ffff;
 }
 

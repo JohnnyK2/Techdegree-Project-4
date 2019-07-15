@@ -70,7 +70,7 @@
 }
 
 @each $col, $color in $grid {
-  .theme__colors ~ .grid__#{$col} {
+  .theme__colors.grid__#{$col} {
     background-color: $color;
   }
 }
