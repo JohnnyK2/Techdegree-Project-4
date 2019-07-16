@@ -3,7 +3,7 @@ input::placeholder {
   padding-left: 5%;
 }
 
-legend {
+legend.headline--secondary {
   margin-top: 1em;
   font-family: $font-arial;
   margin-left: 10%;
@@ -11,17 +11,17 @@ legend {
   color: $grey;
 }
 
-input,
-label {
+.form__input,
+.form__label--hidden {
   display: block;
 }
 
-label {
+.form__label--hidden {
   display: none;
   margin-bottom: 0.5em;
 }
 
-input {
+.form__input {
   margin: 0 10% .5em;
   width: 80%;
   padding-bottom: 0.5em;

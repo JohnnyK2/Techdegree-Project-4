@@ -1,13 +1,15 @@
 
-button {
+.btn--default.theme__colors,
+.grid__col--12 .theme__colors {
   @include mobile {
     @include button-mobile
   }
 }
 
 div.grid__col--12 {
-  display: flex;
-  justify-content: center;
+  @include desktop {
+    @include btn-desk-flex
+  }
 }
 
 .grid__col--12 .theme__colors {

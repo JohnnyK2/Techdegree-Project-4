@@ -1,6 +1,6 @@
-
+//mixins mobile
 @mixin mobile {
-  @media (min-width: 480px) {
+  @media (min-width: $sm) {
     @content;
   }
 }
@@ -16,8 +16,9 @@
   border: none;
 }
 
+//mixins desktop
 @mixin desktop {
-  @media (min-width: 768px) {
+  @media (min-width: $lg) {
     @content;
   }
 }
@@ -32,4 +33,10 @@
   transition-property: background-color;
   transition-duration: 300ms;
   transition-timing-function: ease-out;
+}
+
+//mixin Flexbox
+@mixin btn-desk-flex {
+  display: flex;
+  justify-content: center;
 }

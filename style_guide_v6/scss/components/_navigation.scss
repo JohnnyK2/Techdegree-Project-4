@@ -1,12 +1,14 @@
-ul.nav {
+
+
+.nav {
   @include desktop {
   display: flex;
   justify-content: flex-end;
   }
 }
 
-.nav li.nav__item {
-  list-style: none;
+.nav .nav__item {
+  list-style-type: none;
   &:hover {
     @include transition;
     background-color: $aqua;

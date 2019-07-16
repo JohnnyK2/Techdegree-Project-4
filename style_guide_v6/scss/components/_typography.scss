@@ -1,25 +1,25 @@
 
 .nav li,
-h1,
+.headline--primary,
 p,
-h4,
+.headline--secondary,
 .blockquote {
   font-family: $font-arial;
 }
 
-h1 {
+.headline--primary{
   margin-left: 15%;
   color: $aqua;
 }
 
-h4,
-p {
+.headline--secondary,
+.card {
   margin-left: 10%;
   width: 80%;
   color: $grey;
 }
 
-h4 {
+.headline--secondary {
 
   font-weight: lighter;
 }

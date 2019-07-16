@@ -520,13 +520,17 @@ template {
 }
 
 @media (min-width: 480px) {
-  img {
+  .img--logo,
+.img--frame,
+.img--avatar {
     display: block;
     margin: auto;
   }
 }
 @media (min-width: 768px) {
-  img {
+  .img--logo,
+.img--frame,
+.img--avatar {
     margin-left: 30%;
   }
 }
@@ -542,27 +546,27 @@ template {
 }
 
 @media (min-width: 768px) {
-  ul.nav {
+  .nav {
     display: flex;
     justify-content: flex-end;
   }
 }
 
-.nav li.nav__item {
-  list-style: none;
+.nav .nav__item {
+  list-style-type: none;
 }
-.nav li.nav__item:hover {
+.nav .nav__item:hover {
   transition-property: background-color;
   transition-duration: 300ms;
   transition-timing-function: ease-out;
   background-color: #00ffcc;
 }
-.nav li.nav__item:hover a {
+.nav .nav__item:hover a {
   color: #ffffff;
   font-weight: bold;
 }
 @media (min-width: 480px) {
-  .nav li.nav__item {
+  .nav .nav__item {
     text-align: center;
     padding: 1em;
     width: 80%;
@@ -571,7 +575,7 @@ template {
   }
 }
 @media (min-width: 768px) {
-  .nav li.nav__item {
+  .nav .nav__item {
     text-align: center;
     display: inline-block;
     width: 6.8em;
@@ -586,26 +590,26 @@ template {
 }
 
 .nav li,
-h1,
+.headline--primary,
 p,
-h4,
+.headline--secondary,
 .blockquote {
   font-family: arial;
 }
 
-h1 {
+.headline--primary {
   margin-left: 15%;
   color: #00ffcc;
 }
 
-h4,
-p {
+.headline--secondary,
+.card {
   margin-left: 10%;
   width: 80%;
   color: #8a8a5c;
 }
 
-h4 {
+.headline--secondary {
   font-weight: lighter;
 }
 
@@ -628,7 +632,8 @@ p .link {
 }
 
 @media (min-width: 480px) {
-  button {
+  .btn--default.theme__colors,
+.grid__col--12 .theme__colors {
     width: 85%;
     padding: 0.8em 0;
     margin: 1em 7.5%;
@@ -640,9 +645,11 @@ p .link {
   }
 }
 
-div.grid__col--12 {
-  display: flex;
-  justify-content: center;
+@media (min-width: 768px) {
+  div.grid__col--12 {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 768px) {
@@ -677,7 +684,7 @@ input::placeholder {
   padding-left: 5%;
 }
 
-legend {
+legend.headline--secondary {
   margin-top: 1em;
   font-family: arial;
   margin-left: 10%;
@@ -685,17 +692,17 @@ legend {
   color: #8a8a5c;
 }
 
-input,
-label {
+.form__input,
+.form__label--hidden {
   display: block;
 }
 
-label {
+.form__label--hidden {
   display: none;
   margin-bottom: 0.5em;
 }
 
-input {
+.form__input {
   margin: 0 10% 0.5em;
   width: 80%;
   padding-bottom: 0.5em;

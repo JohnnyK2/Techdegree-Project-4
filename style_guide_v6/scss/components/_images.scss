@@ -1,5 +1,7 @@
 
- img {
+ .img--logo,
+ .img--frame,
+ .img--avatar {
   @include mobile {
     display: block;
     margin: auto;
