@@ -6,12 +6,6 @@
   }
 }
 
-div.grid__col--12 {
-  @include desktop {
-    @include btn-desk-flex
-  }
-}
-
 .grid__col--12 .theme__colors {
   @include desktop {
     @include button-desktop

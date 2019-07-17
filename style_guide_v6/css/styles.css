@@ -519,6 +519,13 @@ template {
   }
 }
 
+@media (min-width: 768px) {
+  div.grid__col--12 {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 @media (min-width: 480px) {
   .img--logo,
 .img--frame,
@@ -642,13 +649,6 @@ p .link {
     font-family: arial;
     border-radius: 10px;
     border: none;
-  }
-}
-
-@media (min-width: 768px) {
-  div.grid__col--12 {
-    display: flex;
-    justify-content: center;
   }
 }
 

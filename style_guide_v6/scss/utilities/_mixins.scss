@@ -40,3 +40,8 @@
   display: flex;
   justify-content: center;
 }
+
+@mixin nav-desk-flex {
+  display: flex;
+  justify-content: flex-end;
+}

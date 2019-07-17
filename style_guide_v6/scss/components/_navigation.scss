@@ -2,8 +2,7 @@
 
 .nav {
   @include desktop {
-  display: flex;
-  justify-content: flex-end;
+   @include nav-desk-flex
   }
 }
 
